@@ -15,7 +15,7 @@ url = "https://www.spotery.com/f/tf-faci-detail/faciDetail?Adf-Window-Id=w1c9ykz
 headers = {
   'adf-rich-message': 'true',
   'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
-  'cookie': 'JSESSIONID=P3CxLsXZ8lAe8HaLrUWZrHckdpuU-PGBthCDtxbAL6LYR6ZFN-2i!-1771886654; __zjc6185=5190665278; __ZEHIC6201=1652240074',
+  'cookie': 'JSESSIONID=VAyz5eYC8F9vV_k_g_wa5J712f9lv2dK9l3MqsmOfpe4UCUshK06!-1771886654; __zjc6185=5190665278; __ZEHIC6201=1652240074',
 }
 
 def generate_payload(date):
@@ -30,6 +30,9 @@ def fetch_court_availability(date):
         for time_slot in time_slots:
             if time_slot[-6:] == "&nbsp;":
                 available_courts.append(f"{time_slot[:8]} {generate_date(date)}")
+    else:
+        print(data.text)
+                
     return available_courts
     
 

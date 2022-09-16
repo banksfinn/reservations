@@ -7,7 +7,7 @@ payload={}
 headers = {
   'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
   'accept-language': 'en-US,en;q=0.9',
-  'cookie': 'JSESSIONID=P3CxLsXZ8lAe8HaLrUWZrHckdpuU-PGBthCDtxbAL6LYR6ZFN-2i!-1771886654; __zjc6185=5190665278; __ZEHIC6201=1652240074; JSESSIONID=jEOxRoiVX8zfTQwr9zai2IKcStERiSuFKRB9r1tojM05IWzC3ER5!-1771886654',
+  'cookie': 'JSESSIONID=VAyz5eYC8F9vV_k_g_wa5J712f9lv2dK9l3MqsmOfpe4UCUshK06; __zjc6185=5190665278; __ZEHIC6201=1652240074; JSESSIONID=jEOxRoiVX8zfTQwr9zai2IKcStERiSuFKRB9r1tojM05IWzC3ER5!-1771886654',
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
